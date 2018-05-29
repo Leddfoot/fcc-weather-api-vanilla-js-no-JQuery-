@@ -1,0 +1,73 @@
+
+* {
+  font-family:fantasy;
+}
+
+.container {
+    zoom: 1; /* IE6&7 */
+}
+
+.container:before,
+.container:after {
+    content: "";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+
+.body-wrapper {
+  width: 75%;
+  margin: 0 auto;
+  background: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.header-wrapper {
+  margin-bottom: 48px;
+
+  padding: 26px;
+
+  text-align: center;
+  color: white;
+}
+
+#main-header-text {
+    background: black;
+}
+
+.location-wrapper {
+  float: left;
+  position: relative;
+}
+
+.temp-div {
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  column-count: 2;
+  font-size: 40px;
+}
+
+#weather-icon {
+  width: 150px;
+  height: 150px;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+#temp-display {
+  column-span: 1;
+  text-align: center;
+  max-width: 50%;
+  margin-right: 20px;
+
+}
+
+#cOrD {
+    column-span: 1;
+    max-width: 50%;
+}

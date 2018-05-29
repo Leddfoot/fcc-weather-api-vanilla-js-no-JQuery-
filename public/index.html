@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Acme Best Weather App</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <div class="header-wrapper container">
+      <h1 id="main-header-text">Deluxe Weather Getter</h1>
+      </div>
+
+      <div class"location-wrapper container">
+      <h4 id="locDescription"></h4>
+      </div>
+
+      <div class"img-holder container">
+        <img id="weather-icon" src="images/loading.gif" alt="This is an icon that visually represents the weather, it varies based on the results but usually includes a sun or clouds or both">
+      </div>
+
+      <div id="no-image-from-api"></div>
+
+      <div class="temp-div">
+      <p id="temp-display"></p><p id="cOrF"></>
+      </div>
+
+      <div class="button-holder container">
+      <button id="changeTemp" onclick="changeTemperature()">Change to <span id="celciusOrFahrenheit">Fahrenheit</span></button>
+      <p id="status">Not Located Yet</p>
+    </div>
+    <script type='text/javascript' src='scripts/private.js'></script>
+    <script type='text/javascript' src="scripts/main.js"></script>
+  </body>
+</html>
